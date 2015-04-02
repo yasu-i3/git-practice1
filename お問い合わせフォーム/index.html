@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+   <meta charset="UTF-8">
+	<title>お問い合わせフォーム</title>
+</head>
+<body>
+<form method="POST" name="form1" action="sent.php" onSubmit="return check()">
+<table>
+  
+   <tr>
+      <th>■お名前</th>
+      <td><input type="text" size="70" name="name"></td>
+   </tr>
+   
+   <tr>
+      <th>■メールアドレス</th>
+      <td><input type="text" size="70" name="mail"></td>
+   </tr>
+   
+   <tr>
+      <td><label for="type">■お問い合わせの種類</label></td>
+      <td><select name="type">
+      <option value="question">ご質問・お問い合わせ</option>
+      <option value="material">資料のご請求</option>
+      <option value="company">会社について</option>
+      <option value="recruitment">採用について</option>
+      <option value="other">その他のご連絡</option>
+   </select></td>
+   </tr>
+   
+   <tr>
+      <th>■内容</th>
+      <td>
+         <textarea name="comment" cols="60" rows="10"></textarea>
+      </td>
+   </tr>
+
+　 <tr>
+      <td colspan="2" align="center" width="308">
+         <input type="submit" value="　メール送信　">
+      </td>
+   </tr>
+
+</table>
+</form>
+
+<script src="script.js"></script>
+	
+</body>
+</html>
